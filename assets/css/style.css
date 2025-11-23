@@ -3,6 +3,11 @@
         --muted: #6c757d;
     }
 
+    @font-face {
+        font-family: 'Symphony';
+        src: url('../fonts/Symphony.ttf');
+    }
+
     body {
         font-family: 'Inter', sans-serif;
         line-height: 1.6;
@@ -11,9 +16,13 @@
     }
 
     .brand {
-        font-family: 'Playfair Display', serif;
+        font-family: 'Symphony', serif;
+        font-size: 21px;
         color: var(--accent);
-        font-weight: 700;
+    }
+
+    .lead {
+        font-family: 'Symphony', serif;
     }
 
     .nav-link {
@@ -121,11 +130,6 @@
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-
-    /* .content-img:hover {
-        transform: scale(1.03);
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-    } */
 
     @media (max-width: 991px) {
         .navbar-nav .nav-link.active::after {
